@@ -19,7 +19,7 @@ export default function Home() {
           {/* Product Layout */}
           <div className="lg:grid lg:grid-cols-2 lg:gap-10">
             {/* Left: Image Gallery */}
-            <div>
+            <div className="w-full min-w-0">
               <ImageGallery />
             </div>
 

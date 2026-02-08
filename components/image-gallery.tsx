@@ -20,9 +20,9 @@ export function ImageGallery() {
   const next = () => setCurrent((c) => (c === images.length - 1 ? 0 : c + 1));
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       {/* Main Image */}
-      <div className="relative w-full aspect-square max-w-[560px] bg-white">
+      <div className="relative w-full aspect-square max-w-[560px] bg-white overflow-hidden">
         {images.map((img, i) => (
           <Image
             key={img}
