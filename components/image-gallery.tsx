@@ -29,6 +29,7 @@ export function ImageGallery() {
             src={img || "/placeholder.svg"}
             alt={`Capas de Bancos Premium - Imagem ${i + 1}`}
             fill
+            sizes="(max-width: 640px) 100vw, 560px"
             className={`object-contain transition-opacity duration-200 ${i === current ? "opacity-100" : "opacity-0 pointer-events-none"}`}
             priority={i === 0}
             loading={i === 0 ? "eager" : "lazy"}
@@ -70,6 +71,7 @@ export function ImageGallery() {
               src={img || "/placeholder.svg"}
               alt={`Miniatura ${i + 1}`}
               fill
+              sizes="64px"
               className="object-cover"
             />
           </button>

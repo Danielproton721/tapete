@@ -98,6 +98,7 @@ export function ProductOptions() {
                   src={cor.image || "/placeholder.svg"}
                   alt={cor.label}
                   fill
+                  sizes="40px"
                   className="object-cover"
                 />
               </div>
